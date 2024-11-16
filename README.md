@@ -1,2 +1,2 @@
 # js_functions
-Here is the code of  js_functions project.
+https://shaylasharmin123.github.io/js_functions/
