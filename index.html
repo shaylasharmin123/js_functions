@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="änimation">
+	<meta name="keywords" content="änimation">
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="7 days">
+	<meta name="author" content="Shayla Sharmin">
+
+	<title>js_function</title>
+
+	<!--icons link-->
+	<link rel="stylesheet" href="css/bootstrap-icons.css">
+
+	<!--css links-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+		
+</head>
+<body>
+
+	<div class="container">
+		
+		<!-- exp 1: show text --><hr>
+		<h1>click the button to show the text</h1>
+		<button type="button" class="btn btn-dark" onclick="showText()">Show Text</button>
+		<p id='st'></p>
+
+		<!-- exp 2: change text --><hr>
+		<h1>click the button to change the text</h1>
+		<button type="button" class="btn btn-dark" onclick="changeText()">change text</button>
+		<p id="ct">Hello world</p>
+
+		<!-- exp 3:show date --><hr>
+		<h2>click the button to show the date</h2>
+		<button type="button" class="btn btn-dark" onclick="showDate()">show date</button>
+		<p id="sd">date:</p>
+
+		<!--exp 4: on/off light --><hr>
+		<h2>click the button to on/off the light</h2>
+		<button type="button" class="btn btn-dark" onclick="bulbOn()">On</button>
+		<button type="button" class="btn btn-dark" onclick="bulbOff()">Off</button>
+		<img id="bulb" src="images/bulboff.gif" alt="">
+
+		<!-- exp 5:change font-size --><hr>
+		<h2>click the button to change the style</h2>
+		<button type="button" class="btn btn-dark" onclick="changeStyle()">change style</button>
+		<p id="cs">this is a man.</p>
+
+		<!-- exp 6:show the text --><hr>
+		<h2>click the button to show/hide the content</h2>
+		<button type="button" class="btn btn-dark" onclick="textShow()">show text</button>
+		<button type="button" class="btn btn-dark" onclick="textHide()">hide text</button>
+		<p id="sh">this is a man.</p>
+
+		<!-- exp 7:change font-size --><hr>
+		<h2>click the button to change the style</h2>
+		<button type="button" class="btn btn-dark" onclick="changeSize()">change size</button>
+		<p id="sc">this is a man.</p>
+
+		<!-- exp 8:change color --><hr>
+		<h2>click the button to change the color</h2>
+		<button type="button" class="btn btn-dark" onclick="changeColor()">change color</button>
+		<p id="cc">this is a man.</p>
+
+		<!--exp 9: change image --><hr>
+		<h2>click the button to change the image</h2>
+		<button type="button" class="btn btn-dark" onclick="imgChange()">image change</button>
+		<img id="ic" src="images/man2.jpg" alt="">
+
+		<!--exp 10: repeat text --><hr>
+		<h2>click the button to repeat the text</h2>
+		<button type="text" class="btn btn-dark" onclick="repeatText()">Repeat Text</button>
+		<p id="rt"> output here</p>
+
+		<!--exp 11: manipulate data --><hr>
+		<h2>click the button to manipulate the data</h2>
+		<button type="text" class="btn btn-dark" onclick="mData()">manipulate</button>
+		<p id="m"> output here</p>
+
+		<!--exp 12: manipulate data --><hr>
+		<h2>click the button to manipulate the data</h2>
+		<button type="text" class="btn btn-dark" onclick="mulData()">manipulate</button>
+		<p id="mul"> output here</p>
+
+		<!--exp 13: manipulate data --><hr>
+		<h2>click the button to manipulate the data</h2>
+		<button type="text" class="btn btn-dark" onclick="modData()">modulas</button>
+		<p id="mod"> output here</p>
+
+		<!--exp 14: manipulate data --><hr>
+		<h2>click the button to manipulate the data</h2>
+		<button type="text" class="btn btn-dark" onclick="sData()">subtraction</button>
+		<p id="sub"> output here</p>
+
+		<!--exp 15: compare data --><hr>
+		<h2>click the button to compare the data</h2>
+		<button type="text" class="btn btn-dark" onclick="comData()">comparisn</button>
+		<p id="com"> output here</p>
+
+		<!--exp 16: compare data --><hr>
+		<h2>click the button to compare the data</h2>
+		<button type="text" class="btn btn-dark" onclick="iData()">comparisn</button>
+		<p id="i"> output here</p>
+
+		<!--exp 17: compare data --><hr>
+		<h2>click the button to compare the data</h2>
+		<button type="text" class="btn btn-dark" onclick="idData()">comparisn</button>
+		<p id="id"> output here</p>
+
+		<!--exp 18: compare data --><hr>
+		<h2>click the button to check the value of x</h2>
+		<button type="text" class="btn btn-dark" onclick="vCheck()">check</button>
+		<p id="v"> output here</p>
+
+		<!--exp 19: compare data --><hr>
+		<h2>click the button to check the value of y</h2>
+		<button type="text" class="btn btn-dark" onclick="v1Check()">check</button>
+		<p id="v1"> output here</p>
+
+		<!--exp 20: array test --><hr>
+		<h2>click the button to check the value of array</h2>
+		<button type="text" class="btn btn-dark" onclick="v2Check()">check</button>
+		<p id="v2"> output here</p>
+
+		<!--exp 21: array test --><hr>
+		<h2>click the button to check the value of array</h2>
+		<button type="text" class="btn btn-dark" onclick="v3Check()">check</button>
+		<p id="v3"> output here</p>
+
+		<!--exp 22: array test --><hr>
+		<h2>click the button to check the value of array</h2>
+		<button type="text" class="btn btn-dark" onclick="v4Check()">check</button>
+		<p id="v4"> output here</p>
+
+		<!--exp 23: operator test --><hr>
+		<h2>click the button to check the use of operator</h2>
+		<button type="text" class="btn btn-dark" onclick="v5Check()">operation</button>
+		<p id="v5"> output here</p>
+
+		<!--exp 24: operator test --><hr>
+		<h2>click the button to check the use of operator</h2>
+		<button type="text" class="btn btn-dark" onclick="v6Check()">operation</button>
+		<p id="v6"> output here</p>
+
+		<!--exp 25: incrementing --><hr>
+		<h2>click the button to check the use of operator</h2>
+		<button type="text" class="btn btn-dark" onclick="v7Check()">operation</button>
+		<p id="v7"> output here</p>
+
+		<!--exp 26: exponentiation --><hr>
+		<h2>click the button to check the use of operator</h2>
+		<button type="text" class="btn btn-dark" onclick="v8Check()">operation</button>
+		<p id="v8"> output here</p>
+
+		<!--exp 27: exponentiation --><hr>
+		<h2>click the button to check the use of operator</h2>
+		<button type="text" class="btn btn-dark" onclick="v9Check()">operation</button>
+		<p id="v9"> output here</p>
+
+		<!--exp 28: exponentiation --><hr>
+		<h2>click the button to check the use of operator</h2>
+		<button type="text" class="btn btn-dark" onclick="lCheck()">operation</button>
+		<p id="l"> output here</p>
+
+		<!--exp 29: data type --><hr>
+		<h2>When adding a number and a string, JavaScript will treat the number as a string.</h2>
+		<button type="text" class="btn btn-dark" onclick="dType()">data type
+		</button>
+		<p id="d1"> output here</p>
+
+		<!--exp 30: data type --><hr>
+		<h2>When adding a number and a string, JavaScript will treat the number as a string.</h2>
+		<button type="text" class="btn btn-dark" onclick="d2Type()">data type
+		</button>
+		<p id="d2"> output here</p>
+
+		<!--exp 31: data type --><hr>
+		<h2>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</h2>
+		<button type="text" class="btn btn-dark" onclick="d3Type()">data type
+		</button>
+		<p id="d3"> output here</p>
+
+		<!--exp 32: data type --><hr>
+		<h2>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</h2>
+		<button type="text" class="btn btn-dark" onclick="d4Type()">data type
+		</button>
+		<p id="d4"> output here</p>
+
+		<!--exp 33: data type --><hr>
+		<h2>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</h2>
+		<button type="text" class="btn btn-dark" onclick="d5Type()">data type
+		</button>
+		<p id="d5"> output here</p>
+
+		<!--exp 34: data type --><hr>
+		<h2>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</h2>
+		<button type="text" class="btn btn-dark" onclick="d6Type()">data type
+		</button>
+		<p id="d6"> output here</p>
+
+		<!--exp 35: data type --><hr>
+		<h2>Booleans can have two values: true or false:</h2>
+		<button type="text" class="btn btn-dark" onclick="d7Type()">data type
+		</button>
+		<p id="d7"> output here</p>
+
+		<!--exp 36: data type --><hr>
+		<h2>The escape sequence \' inserts a single quote in a string.</h2>
+		<button type="text" class="btn btn-dark" onclick="d8Type()">data type
+		</button>
+		<p id="d8"> output here</p>
+
+		<!--exp 37: method--><hr>
+		<h2>The toString() method converts a number to a string.</h2>
+		<button type="text" class="btn btn-dark" onclick="d9Type()">data type
+		</button>
+		<p id="d9"> output here</p>
+
+		<!--exp 38: method --><hr>
+		<h2>The toFixed() method rounds a number to a given number of digits.</h2>
+		<button type="text" class="btn btn-dark" onclick="m1Type()">data type
+		</button>
+		<p id="m1"> output here</p>
+
+		<!--exp 39: method --><hr>
+		<h2>The toPrecision() method returns a string, with a number written with a specified length:</h2>
+		<button type="text" class="btn btn-dark" onclick="m2Type()">data type
+		</button>
+		<p id="m2"> output here</p>
+
+		<!--exp 40: method --><hr>
+		<h2>The Number() method converts variables to numbers:</h2>
+		<button type="text" class="btn btn-dark" onclick="m3Type()">data type
+		</button>
+		<p id="m3"> output here</p>
+		
+		<!--exp 41: array --><hr>
+		<h2>The toString() method returns an array as a comma separated string:</h2>
+		<button type="text" class="btn btn-dark" onclick="a1Type()"> array
+		</button>
+		<p id="a1"> output here</p>
+
+		<!--exp 42: array --><hr>
+		<h2>The length property returns the length of an array:</h2>
+		<button type="text" class="btn btn-dark" onclick="a2Type()"> array
+		</button>
+		<p id="a2"> output here</p>
+
+		<!--exp 43: if/else--><hr>
+		<h2>Display "Good day!" if the hour is less than 18:00:</h2>
+		<button type="text" class="btn btn-dark" onclick="f1Type()"> condition
+		</button>
+		<p id="f1"> good evening!</p>
+		
+		<!--exp 44: if/else--><hr>
+		<h2>A time-based greeting:</h2>
+		<button type="text" class="btn btn-dark" onclick="f2Type()"> condition
+		</button>
+		<p id="f2"> good evening!</p>
+
+		<!--exp 45: class example--><hr>
+		<h2>class example:</h2>
+		<button type="text" class="btn btn-dark" onclick="classEx()"> class exm
+		</button>
+		<p class="p"> good evening!</p>
+		<p class="p"> good evening!</p>
+		<p class="p"> good evening!</p>
+		<p class="p"> good evening!</p>
+		<p class="p"> good evening!</p>
+		
+
+		<!-- exp 46: show text --><hr>
+		<h1>click the button to show the text</h1>
+		<button type="button" class="btn btn-dark" onclick="seeText()">see Text</button>
+		<p id='see'></p>
+
+		<!-- exp 47: show text --><hr>
+		<h1>click the button to show the text</h1>
+		<button type="button" class="btn btn-dark" onclick="sawText()">saw Text</button>
+		<p id='saw'></p>
+
+		<!-- exp 48: change text --><hr>
+		<h1>click the button to change the text</h1>
+		<button type="button" class="btn btn-dark" onclick="changingText()">change text</button>
+		<p id="change">Hello world</p>
+
+		<!-- exp 49:change color --><hr>
+		<h2>click the button to change the color</h2>
+		<button type="button" class="btn btn-dark" onclick="changingColor()">change color</button>
+		<p id="chan">this is a man.</p>
+
+		<!-- exp 50:change fonts --><hr>
+		<h2>click the button to change the color</h2>
+		<button type="button" class="btn btn-dark" onclick="changingSize()">change color</button>
+		<p id="chsz">this is a man.</p>
+
+
+	</div>
+	
+	<!--js links-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
